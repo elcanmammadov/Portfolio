@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+
+#mainNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#mainNav.navbar-scrolled {
+  position: relative;
+  background-color: #16171d;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  gap: 2px;
+  order: 2;
+  margin-left: auto;
+  margin-right: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  padding: 3px;
+}
+
+.lang-switch button {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-switch button:hover {
+  color: #fff;
+}
+
+.lang-switch button.active {
+  background: #0078ff;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .navbar .container {
+    flex-wrap: wrap;
+  }
+
+  .lang-switch {
+    order: 1;
+    margin-left: 0;
+    margin-right: 8px;
+  }
+
+  .navbar-toggler {
+    order: 3;
+  }
+
+  .navbar-collapse {
+    order: 4;
+    flex-basis: 100%;
+    background-color: #16171d;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+
+  .intro-title {
+    font-size: 2rem !important;
+  }
+
+  .intro-subtitle {
+    font-size: 1.1rem !important;
+  }
+
+  .box-shadow-full {
+    padding: 1.25rem !important;
+  }
+
+  .service-box {
+    margin-bottom: 1rem;
+  }
+
+  .paralax-mf {
+    padding: 4rem 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-img img {
+    max-width: 180px !important;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.back-to-top {
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.back-to-top i {
+  padding-top: 0 !important;
+}
+
+.back-to-top:hover {
+  background: #005fce;
+}
